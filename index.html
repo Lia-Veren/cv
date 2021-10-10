@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
     <meta charset="UTF-8" />
     <title>Yulia CV</title>
     <link href="styles.css" rel="stylesheet" />
-</head>
-<body>
+ </head>
+ <body>
+    <div class="container">
+        <div class="info">
+            <img src="avatar.jpg" alt="photo" class="avatar" />
 
-    <div class="info">
-    <img src="avatar.jpg" alt="photo"
-     class="avatar" />
-     <h1>Юлия Веренич</h1>
-    <p>Образование высшее: <strong>Преподаватель английского языка и зарубежной литературы.</strong></p>
-    <p>Люблю общаться с творческими людьми и слушать музыку.</p>
-    </div>   
-   
-    <hr />
+            <div class="info-text">
+                <h1>Юлия Веренич</h1>
+                <p>Образование высшее: <strong>Преподаватель английского языка и зарубежной литературы.</strong></p>
+                <p>Люблю общаться с творческими людьми и слушать музыку.</p>
+            
+                <h4>Мои социальные сети</h4>
+                
+                <a href="https://www.instagram.com/v.yulija/?hl=ru" target="_blank">Instagram</a>
+                |
+                <a href="https://www.facebook.com/lia.verenich" target="_blank">Facebook</a>
+            </div>
+        </div>  
+     
+            <div class="card bg-yellow"> 
+            <h2>Хобби</h2>
+            <ol class="list">
+                <li>Велопрогулки</li>
+                <li>Музыка</li>
+                <li>Путешествия</li>
+            </ol>
+        </div>
+        
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
 
-    <h2>Мои социальные сети</h2>
+            <table class="table">
+                    <tr>
+                        <td>ОШ №26</td> 
+                        <td>Преподаватель английского языка</td>
+                        <td>2001-2018</td>
+                    </tr>
+                    <tr>
+                        <td>Wake Up School</td> 
+                        <td>Преподаватель английского языка</td>
+                        <td>2019-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Studing at home</td> 
+                        <td>Программист</td>
+                        <td>2021-now</td>
+                    </tr>
+            </table>
+        </div>   
 
-    <ul>
-        <li><a href="https://www.instagram.com/v.yulija/?hl=ru" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com/lia.verenich" target="_blank">Facebook</a></li>
-    </ul>
+       
+        <div class="card bg-red">
+            <h2>Youtube video</h2>
+            <ul class="link-list">
+                <li>
+                  <a href="https://www.youtube.com/watch?v=oZ6DP_Zdb5o&t=35s">Video with our cat</a>  
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=qRz2tZ77X_g&t=78s">Video with our dog</a>
+                </li>
+              </ul> 
+        </div>
+       
+        <div class="contact">
+            <h2>Связаться со мной</h2> 
 
-    <hr />
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>  
+                        <input type="text" id="name" placeholder="Введите имя" />
+                    </div> 
 
-    <h2>Хобби</h2>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>  
+                        <input type="text" id="email" placeholder="Введите email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>      
+                    <textarea id="text" rows="2" cols="15"></textarea>
+                </div>  
 
-    <ol>
-        <li>Велопрогулки</li>
-        <li>Музыка</li>
-        <li>Путешествия</li>
-    </ol>
+                <input class="btn" type="submit" value="Связаться!" />
 
-    <hr />
-
-    <h2>Опыт работы</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ОШ №26</td> 
-                <td>Преподаватель английского языка</td>
-                <td>2001-2018</td>
-            </tr>
-            <tr>
-                <td>Wake Up School</td> 
-                <td>Преподаватель английского языка</td>
-                <td>2019-2021</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr />
-
-    <h2>Youtube video</h2>
-
-    <a href="youtube.html">Посмотреть видео</a>
-
-    <hr />
-
-    <h2>Связаться со мной</h2> 
+            </form> 
+    </div>
     
-    <form action="/">
+    <div class="position">
+        <div class="box"></div>
+    </div>
+    </div>
 
-        <label for="name">Ваше имя:</label>  
-        <input type="text" id="name" placeholder="Введите имя" />
-
-        <br />
-
-        <label for="email">Ваш email:</label>  
-        <input type="text" id="email" placeholder="Введите email" />
-
-        <br />
-
-        <label for="text">Ваше сообщение:</label>  
-
-        <br />
-
-        <textarea id="text" rows="2" cols="15"></textarea>
-
-        <br />
-
-        <input type="submit" value="Связаться!" />
-
-    </form>  
-
+    <div style="margin-bottom: 500px;"></div>
 </body>
 </html>
